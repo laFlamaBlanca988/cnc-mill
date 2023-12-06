@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* src/assets/fonts.css */
+
+@font-face {
+  font-family: "Klavika";
+  src: url("./assets/fonts/Klavika-regular.otf") format("opentype");
+}
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Klavika", sans-serif;
+  height: 100%;
+}
+a,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+}
