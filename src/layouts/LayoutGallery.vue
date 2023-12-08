@@ -2,9 +2,9 @@
   <div
     ref="galerija"
     id="galerija"
-    class="calc-screen-height bg-light-blue pt-14"
+    class="calc-screen-height bg-light-blue pb-10 pt-14"
   >
-    <h3 class="mb-20 text-center text-5xl text-heading-blue">
+    <h3 class="mb-20 text-center text-4xl text-heading-blue md:text-5xl">
       {{ t("gallery.title") }}
     </h3>
 
@@ -90,7 +90,7 @@ const breakpoints = ref({
 </script>
 <style scoped>
 .calc-screen-height {
-  height: calc(100vh - 64px);
+  min-height: calc(100vh - 64px);
 }
 .custom-arrows {
   position: absolute;

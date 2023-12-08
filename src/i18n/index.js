@@ -5,6 +5,7 @@ const messages = {
     locale: {
       en: "EN ",
       sr: "SR",
+      de: "DE",
     },
     nav: {
       home: "NASLOVNA",
@@ -77,6 +78,10 @@ const messages = {
       gallery: "Galerija",
       contact: "Kontakt",
       contactUs: "Kontaktirajte nas",
+    },
+    sidebar: {
+      description:
+        "Naša specijalnost leži u visokoj preciznosti i širokom spektru usluga prilagođenih zahtevima svakog klijenta.",
     },
   },
   en: {
@@ -158,6 +163,10 @@ const messages = {
       contact: "Contact",
       contactUs: "Contact Us",
     },
+    sidebar: {
+      description:
+        "Our specialty lies in high precision and a wide range of services tailored to the requirements of each client.",
+    },
   },
   de: {
     locale: {
@@ -237,6 +246,10 @@ const messages = {
       gallery: "Galerie",
       contact: "Kontakt",
       contactUs: "Kontaktiere uns",
+    },
+    sidebar: {
+      description:
+        "Unsere Spezialität liegt in hoher Präzision und einem breiten Spektrum an Dienstleistungen, die auf die Anforderungen jedes Kunden zugeschnitten sind.",
     },
   },
 };

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-[70px] justify-end">
+  <div class="flex w-[25px] justify-end">
     <Icon
       @click="toggleMenu"
       icon="ph:globe"

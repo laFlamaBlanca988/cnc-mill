@@ -44,8 +44,8 @@ module.exports = {
           "100%": { transform: "translateX(0)" },
         },
         slideFromRight: {
-          "0%": { transform: "translateX(1000px)" },
-          "100%": { transform: "translateX(0)" },
+          "0%": { transform: "translateX(2000px)" },
+          "100%": { transform: "translateX(1000px)" },
         },
         slideNavbarFromRight: {
           "0%": { transform: "translateX(100%)" },

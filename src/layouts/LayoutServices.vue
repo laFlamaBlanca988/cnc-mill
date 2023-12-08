@@ -2,11 +2,11 @@
   <div
     ref="usluge"
     id="usluge"
-    class="calc-screen-height relative h-screen overflow-hidden"
+    class="calc-screen-height relative overflow-hidden pb-32"
   >
     <!-- Background Image -->
     <div
-      class="calc-screen-height absolute inset-0 z-[-1] bg-cover bg-center"
+      class="absolute inset-0 z-[-1] bg-cover bg-center"
       :style="{ backgroundImage: `url(${backgroundImage})` }"
     ></div>
 
@@ -40,7 +40,7 @@
 </template>
 
 <script setup>
-import backgroundImage from "../assets/images/HeroBackgroundImage.png";
+import backgroundImage from "../assets/images/background_services.jpg";
 import { useIntersectionObserver } from "@vueuse/core";
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
@@ -61,6 +61,6 @@ const { stop } = useIntersectionObserver(
 </script>
 <style scoped>
 .calc-screen-height {
-  height: calc(100vh - 64px);
+  min-height: calc(100vh - 64px);
 }
 </style>

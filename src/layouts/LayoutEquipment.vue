@@ -5,7 +5,7 @@
       class="relative flex flex-col items-center justify-between gap-12 overflow-hidden pb-10 pt-10 xl:flex-row xl:gap-0 xl:pt-0"
     >
       <h4
-        class="text-bg-main-blue flex-none text-3xl lg:text-5xl xl:absolute xl:left-[100px] xl:top-10"
+        class="text-bg-main-blue flex-none text-4xl lg:text-5xl xl:absolute xl:left-[100px] xl:top-10"
       >
         {{ t("equipment.title") }}
       </h4>
@@ -106,7 +106,21 @@ import backgroundImage_1 from "../assets/images/vmx40.png";
 import backgroundImage_2 from "../assets/images/vm1.png";
 import backgroundImage_3 from "../assets/images/tm6.png";
 
+// import { useIntersectionObserver } from "@vueuse/core";
+// import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
+// const animatedElement = ref(null);
+// const targetIsVisible = ref(false);
+// const innerWidth = window.innerWidth;
+// const { stop } = useIntersectionObserver(
+//   animatedElement,
+//   ([{ isIntersecting }], observerElement) => {
+//     if (isIntersecting) {
+//       targetIsVisible.value = isIntersecting;
+//       stop();
+//     }
+//   }
+// );
 </script>

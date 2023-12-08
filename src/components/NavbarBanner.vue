@@ -1,6 +1,6 @@
 <template>
   <div
-    class="banner-above-navbar text-dark hidden items-center justify-center gap-2 bg-white py-2 text-center opacity-80 xl:flex"
+    class="banner-above-navbar text-dark hidden items-center justify-center gap-2 bg-white py-2 text-center opacity-80 lg:flex"
   >
     <div class="flex items-center border-r border-gray-300 pr-2">
       <Icon icon="mdi:location"></Icon>

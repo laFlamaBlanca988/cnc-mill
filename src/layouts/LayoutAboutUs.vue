@@ -23,7 +23,7 @@
         </div>
       </div>
       <div
-        class="text-dark relative z-20 flex w-full flex-wrap items-center justify-center gap-2 bg-white py-4 text-center text-black opacity-60"
+        class="text-dark relative z-20 mb-10 flex w-full flex-wrap items-center justify-center gap-2 bg-white py-4 text-center text-black opacity-60 md:mb-20"
       >
         <div
           class="justify-starts flex min-w-[200px] items-center gap-1 border-r border-gray-300 pr-2 md:justify-center"

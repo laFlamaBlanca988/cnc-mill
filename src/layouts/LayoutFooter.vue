@@ -1,14 +1,14 @@
 <template>
   <div
-    class="flex h-[500px] flex-col items-center gap-8 bg-white bg-opacity-60 py-4 lg:h-auto lg:flex-row lg:items-start"
+    class="flex flex-col items-center gap-8 bg-white bg-opacity-60 py-4 lg:flex-row"
   >
     <img
-      class="hidden h-[150px] w-1/3 lg:block"
-      src="../assets/images/cncmill-logo.png"
+      class="block h-[180px] w-1/3 lg:order-1"
+      src="../assets/images/logo_blue.svg"
       alt="cncmill-logo"
     />
     <div
-      class="flex w-full flex-col items-center justify-center text-gray-600 lg:w-1/3"
+      class="order-2 flex w-full flex-col items-center justify-center text-gray-600 lg:w-1/3"
     >
       <p class="text-3xl">{{ t("footer.menu") }}</p>
       <a class="text-black" href="#naslovna">{{ t("footer.home") }}</a>
@@ -18,7 +18,9 @@
       <a class="text-black" href="#galerija">{{ t("footer.gallery") }}</a>
       <a class="text-black" href="#kontakt">{{ t("footer.contact") }}</a>
     </div>
-    <div class="flex h-[100px] w-full flex-col items-center gap-4 lg:w-1/3">
+    <div
+      class="order-2 flex w-full flex-col items-center gap-4 lg:order-3 lg:w-1/3"
+    >
       <p class="text-3xl">{{ t("footer.contactUs") }}</p>
       <div class="px-10">
         <a class="mb-4 flex items-center gap-2 text-black" href="#">
