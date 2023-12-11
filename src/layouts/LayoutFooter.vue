@@ -5,7 +5,7 @@
     <img
       class="block h-[180px] w-1/3 lg:order-1"
       src="../assets/images/logo_blue.svg"
-      alt="cncmill-logo"
+      alt="cncmill-logo3"
     />
     <div
       class="order-2 flex w-full flex-col items-center justify-center text-gray-600 lg:w-1/3"

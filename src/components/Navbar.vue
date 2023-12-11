@@ -58,7 +58,7 @@
             <img
               class="h-[45px] w-auto"
               src="../assets/images/cncmill-logo.png"
-              alt="cncmill-logo"
+              alt="cncmill-logo1"
             />
           </RouterLink>
           <div class="flex w-[40%] justify-end md:gap-10">
@@ -115,7 +115,7 @@
           <img
             class="h-[100px] lg:order-1"
             src="../assets/images/logo_white_sidebar.svg"
-            alt="cncmill-logo"
+            alt="cncmill-logo2"
           />
         </RouterLink>
       </div>
