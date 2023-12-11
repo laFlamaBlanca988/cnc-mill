@@ -32,7 +32,7 @@ const messages = {
     services: {
       title: "CNC glodanje",
       description:
-        "Vršimo usluge preciznog CNC glodanja na visoko kvalitetnim obradnim centrima. Naša stručnost u preciznom CNC glodanju kao i dugogodišnje iskustvo rada na europskom tržistu, izdvaja nas od konkurencije.",
+        "Vršimo usluge preciznog CNC glodanja i struganja metala na visoko kvalitetnim obradnim centrima. Naša stručnost u oba područja obrade metala, kao i dugogodišnje iskustvo na europskom tržištu, izdvajaju nas od konkurencije. Fokusirani smo na pružanje vrhunske usluge kroz preciznost i efikasnost u procesu glodanja i struganja metala, zadovoljavajući tako i najzahtjevnije potrebe naših klijenata.",
     },
     equipment: {
       title: "OPREMA",
@@ -115,7 +115,7 @@ const messages = {
     services: {
       title: "CNC milling",
       description:
-        "We provide services of precise CNC milling using high-quality machining centers. Our expertise in precision CNC milling, along with years of experience operating in the European market, sets us apart from the competition.",
+        "We provide precise CNC milling and metal turning services using high-quality machining centers. Our expertise in both metal milling and turning, along with years of experience in the European market, sets us apart from the competition. We are dedicated to delivering top-notch service through precision and efficiency in metal milling and turning processes, meeting even the most demanding needs of our clients.",
     },
     equipment: {
       title: "EQUIPMENT",
@@ -199,7 +199,7 @@ const messages = {
     services: {
       title: "CNC-Fräsen",
       description:
-        "Wir bieten Dienstleistungen für präzises CNC-Fräsen mit hochwertigen Bearbeitungszentren an. Unsere Expertise im Bereich präzises CNC-Fräsen und unsere langjährige Erfahrung auf dem europäischen Markt unterscheiden uns von der Konkurrenz.",
+        "Wir bieten präzise CNC-Fräs- und Metalldrehdienstleistungen auf hochwertigen Bearbeitungszentren an. Unsere Expertise sowohl im Metallfräsen als auch im Drehen, zusammen mit jahrelanger Erfahrung auf dem europäischen Markt, hebt uns von der Konkurrenz ab. Wir sind darauf spezialisiert, erstklassigen Service durch Präzision und Effizienz bei den Metallfräs- und Drehprozessen zu bieten und selbst den anspruchsvollsten Anforderungen unserer Kunden gerecht zu werden.",
     },
     equipment: {
       title: "AUSRÜSTUNG",

@@ -3,7 +3,7 @@
     <Icon
       @click="toggleMenu"
       icon="ph:globe"
-      class="relative h-[25px] w-[25px] text-white"
+      class="relative h-[25px] w-[25px] cursor-pointer text-white"
     ></Icon>
     <select
       v-if="localesAreActive"

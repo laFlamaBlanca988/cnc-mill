@@ -9,6 +9,8 @@
       class="calc-screen-height absolute inset-0 z-[-1] bg-cover bg-center"
       :style="{ backgroundImage: `url(${backgroundImage})` }"
     ></div>
+    <!-- Dark overlay to improve text visibility -->
+    <div class="absolute inset-0 bg-black opacity-30"></div>
     <div
       class="relative z-10 flex h-full flex-col items-start justify-start text-white lg:items-center lg:justify-center"
     >
@@ -35,5 +37,10 @@ const { t } = useI18n();
 <style scoped>
 .calc-screen-height {
   height: calc(100vh - 104px);
+}
+@media (max-width: 1024px) {
+  .calc-screen-height {
+    height: calc(100vh - 64px);
+  }
 }
 </style>

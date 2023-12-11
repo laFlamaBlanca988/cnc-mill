@@ -10,6 +10,12 @@
         {{ t("equipment.title") }}
       </h4>
       <div
+        ref="animatedElementFirstRight"
+        :class="
+          animatedElementFirstRightTargetIsVisible && innerWidth > 1280
+            ? 'animate-slideFromRight'
+            : ''
+        "
         class="flex h-[90px] w-full items-center justify-center bg-main-blue text-white xl:order-3 xl:h-[270px] xl:w-[270px]"
       >
         <h3 class="text-3xl lg:text-4xl">VMX-40</h3>
@@ -20,7 +26,13 @@
       ></div>
 
       <ul
+        ref="animatedElementFirstLeft"
         class="flex h-[270px] w-full flex-col justify-center gap-3 bg-main-blue pl-14 text-white xl:order-1 xl:w-[500px]"
+        :class="
+          animatedElementFirstLeftTargetIsVisible && innerWidth > 1280
+            ? 'animate-slideFromLeft'
+            : ''
+        "
       >
         <li class="list-disc text-xl lg:text-2xl">
           {{ t("equipment.machine_1.paragraph_1") }}
@@ -45,6 +57,12 @@
       class="relative flex flex-col items-center justify-between gap-12 overflow-hidden pb-10 pt-10 xl:flex-row xl:gap-0 xl:pt-0"
     >
       <div
+        ref="animatedElementSecondLeft"
+        :class="
+          animatedElementSecondLeftTargetIsVisible && innerWidth > 1280
+            ? 'animate-slideFromLeft'
+            : ''
+        "
         class="flex h-[90px] w-full items-center justify-center bg-main-blue text-white xl:h-[270px] xl:w-[270px]"
       >
         <h3 class="text-3xl lg:text-4xl">VM-1</h3>
@@ -54,6 +72,12 @@
         :style="{ backgroundImage: `url(${backgroundImage_2})` }"
       ></div>
       <ul
+        ref="animatedElementSecondRight"
+        :class="
+          animatedElementSecondRightTargetIsVisible && innerWidth > 1280
+            ? 'animate-slideFromRight'
+            : ''
+        "
         class="flex h-[270px] w-full flex-col justify-center gap-3 bg-main-blue pl-14 text-white xl:w-[500px]"
       >
         <li class="list-disc text-xl lg:text-2xl">
@@ -78,6 +102,12 @@
       class="relative flex flex-col items-center justify-between gap-12 overflow-hidden pb-24 pt-10 xl:flex-row xl:gap-0 xl:pt-0"
     >
       <div
+        ref="animatedElementThirdRight"
+        :class="
+          animatedElementThirdRightTargetIsVisible && innerWidth > 1280
+            ? 'animate-slideFromRight'
+            : ''
+        "
         class="flex h-[90px] w-full items-center justify-center bg-main-blue text-white xl:order-3 xl:h-[270px] xl:w-[270px]"
       >
         <h3 class="text-3xl lg:text-4xl">TM-6</h3>
@@ -88,6 +118,12 @@
       ></div>
 
       <ul
+        ref="animatedElementThirdLeft"
+        :class="
+          animatedElementThirdLeftTargetIsVisible && innerWidth > 1280
+            ? 'animate-slideFromLeft'
+            : ''
+        "
         class="flex h-[270px] w-full flex-col justify-center gap-3 bg-main-blue pl-14 text-white xl:order-1 xl:w-[500px]"
       >
         <li class="list-disc text-xl lg:text-2xl">
@@ -106,21 +142,80 @@ import backgroundImage_1 from "../assets/images/vmx40.png";
 import backgroundImage_2 from "../assets/images/vm1.png";
 import backgroundImage_3 from "../assets/images/tm6.png";
 
-// import { useIntersectionObserver } from "@vueuse/core";
-// import { ref } from "vue";
+import { useIntersectionObserver } from "@vueuse/core";
+import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
-// const animatedElement = ref(null);
-// const targetIsVisible = ref(false);
-// const innerWidth = window.innerWidth;
-// const { stop } = useIntersectionObserver(
-//   animatedElement,
-//   ([{ isIntersecting }], observerElement) => {
-//     if (isIntersecting) {
-//       targetIsVisible.value = isIntersecting;
-//       stop();
-//     }
-//   }
-// );
+const animatedElementFirstLeft = ref(null);
+const animatedElementSecondLeft = ref(null);
+const animatedElementThirdLeft = ref(null);
+
+const animatedElementFirstLeftTargetIsVisible = ref(false);
+const animatedElementSecondLeftTargetIsVisible = ref(false);
+const animatedElementThirdLeftTargetIsVisible = ref(false);
+const animatedElementFirstRight = ref(null);
+const animatedElementSecondRight = ref(null);
+const animatedElementThirdRight = ref(null);
+
+const animatedElementFirstRightTargetIsVisible = ref(false);
+const animatedElementSecondRightTargetIsVisible = ref(false);
+const animatedElementThirdRightTargetIsVisible = ref(false);
+const innerWidth = document.body.clientWidth;
+
+const { stop: stopFirst } = useIntersectionObserver(
+  animatedElementFirstLeft,
+  ([{ isIntersecting }], observerElement) => {
+    if (isIntersecting) {
+      animatedElementFirstLeftTargetIsVisible.value = isIntersecting;
+      stopFirst(); // Stop observing the first element once it's intersecting
+    }
+  }
+);
+
+const { stop: stopSecond } = useIntersectionObserver(
+  animatedElementSecondLeft,
+  ([{ isIntersecting }], observerElement) => {
+    if (isIntersecting) {
+      animatedElementSecondLeftTargetIsVisible.value = isIntersecting;
+      stopSecond(); // Stop observing the second element once it's intersecting
+    }
+  }
+);
+const { stop: stopThird } = useIntersectionObserver(
+  animatedElementThirdLeft,
+  ([{ isIntersecting }], observerElement) => {
+    if (isIntersecting) {
+      animatedElementThirdLeftTargetIsVisible.value = isIntersecting;
+      stopThird(); // Stop observing the second element once it's intersecting
+    }
+  }
+);
+const { stop: stopFourth } = useIntersectionObserver(
+  animatedElementFirstRight,
+  ([{ isIntersecting }], observerElement) => {
+    if (isIntersecting) {
+      animatedElementFirstRightTargetIsVisible.value = isIntersecting;
+      stopFourth(); // Stop observing the second element once it's intersecting
+    }
+  }
+);
+const { stop: stopFifth } = useIntersectionObserver(
+  animatedElementSecondRight,
+  ([{ isIntersecting }], observerElement) => {
+    if (isIntersecting) {
+      animatedElementSecondRightTargetIsVisible.value = isIntersecting;
+      stopFifth(); // Stop observing the second element once it's intersecting
+    }
+  }
+);
+const { stop: stopSixth } = useIntersectionObserver(
+  animatedElementThirdRight,
+  ([{ isIntersecting }], observerElement) => {
+    if (isIntersecting) {
+      animatedElementThirdRightTargetIsVisible.value = isIntersecting;
+      stopSixth(); // Stop observing the second element once it's intersecting
+    }
+  }
+);
 </script>

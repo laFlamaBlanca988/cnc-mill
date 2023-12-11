@@ -17,7 +17,7 @@
           <h1 class="mb-4 text-2xl md:text-center lg:text-4xl">
             {{ t("about.title") }}
           </h1>
-          <h3 class="max-w-[800px] px-4 text-center">
+          <h3 class="max-w-[800px] px-4 text-center text-lg">
             {{ t("about.description") }}
           </h3>
         </div>
@@ -33,7 +33,7 @@
             icon="healthicons:factory-worker"
           ></Icon>
           <div class="text-dark flex flex-col justify-start font-semibold">
-            <p class="text-start">4</p>
+            <p class="text-start">6</p>
             <p>{{ t("info.employees") }}</p>
           </div>
         </div>
@@ -45,7 +45,7 @@
             icon="bi:buildings-fill"
           ></Icon>
           <div class="text-dark flex flex-col justify-start font-semibold">
-            <p class="text-start">120 m²</p>
+            <p class="text-start">250 m²</p>
             <p>{{ t("info.workspace") }}</p>
           </div>
         </div>
@@ -57,7 +57,7 @@
             icon="game-icons:gears"
           ></Icon>
           <div class="text-dark flex flex-col justify-start font-semibold">
-            <p class="text-start">2</p>
+            <p class="text-start">4</p>
             <p>{{ t("info.facilities") }}</p>
           </div>
         </div>
