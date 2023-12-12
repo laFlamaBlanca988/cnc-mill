@@ -30,7 +30,7 @@ const messages = {
       facilities: "CNC obradna mjesta",
     },
     services: {
-      title: "CNC glodanje",
+      title: "CNC glodanje i struganje",
       description:
         "Vršimo usluge preciznog CNC glodanja i struganja metala na visoko kvalitetnim obradnim centrima. Naša stručnost u oba područja obrade metala, kao i dugogodišnje iskustvo na europskom tržištu, izdvajaju nas od konkurencije. Fokusirani smo na pružanje vrhunske usluge kroz preciznost i efikasnost u procesu glodanja i struganja metala, zadovoljavajući tako i najzahtjevnije potrebe naših klijenata.",
     },
@@ -120,7 +120,7 @@ const messages = {
       facilities: "CNC machining stations",
     },
     services: {
-      title: "CNC milling",
+      title: "CNC milling and turning",
       description:
         "We provide precise CNC milling and metal turning services using high-quality machining centers. Our expertise in both metal milling and turning, along with years of experience in the European market, sets us apart from the competition. We are dedicated to delivering top-notch service through precision and efficiency in metal milling and turning processes, meeting even the most demanding needs of our clients.",
     },
@@ -211,7 +211,7 @@ const messages = {
       facilities: "CNC-Bearbeitungsstationen",
     },
     services: {
-      title: "CNC-Fräsen",
+      title: "CNC Fräsen und Drehen",
       description:
         "Wir bieten präzise CNC-Fräs- und Metalldrehdienstleistungen auf hochwertigen Bearbeitungszentren an. Unsere Expertise sowohl im Metallfräsen als auch im Drehen, zusammen mit jahrelanger Erfahrung auf dem europäischen Markt, hebt uns von der Konkurrenz ab. Wir sind darauf spezialisiert, erstklassigen Service durch Präzision und Effizienz bei den Metallfräs- und Drehprozessen zu bieten und selbst den anspruchsvollsten Anforderungen unserer Kunden gerecht zu werden.",
     },
