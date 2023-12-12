@@ -54,6 +54,13 @@ const messages = {
         paragraph_1: "Max. prečnik 254mm",
         paragraph_2: "Max. dužina fija 405mm",
       },
+      machine_4: {
+        paragraph_1: "Max. X osa 1067mm",
+        paragraph_2: "Max. Y osa 610mm",
+        paragraph_3: "Max. Z osa 610mm",
+        paragraph_4: "Max nosivost stola - 1746Kg",
+        paragraph_5: "Dimenzije stola - 1067x610mm",
+      },
     },
     gallery: {
       title: "GALERIJA",
@@ -138,6 +145,13 @@ const messages = {
         paragraph_1: "Max diameter - 254mm",
         paragraph_2: "Max. phi length 405mm",
       },
+      machine_4: {
+        paragraph_1: "Max. X-axis 1067mm",
+        paragraph_2: "Max. Y-axis 610mm",
+        paragraph_3: "Max. Z-axis 610mm",
+        paragraph_4: "Max table load capacity - 1746kg",
+        paragraph_5: "Table dimensions - 1067x610mm",
+      },
     },
     gallery: {
       title: "GALLERY",
@@ -183,8 +197,8 @@ const messages = {
       contact: "KONTAKT",
     },
     hero: {
-      headerTop: "CNC Präzise",
-      headerBottom: "Metallbearbeitung",
+      headerTop: "CNC PRÄZISE",
+      headerBottom: "METALLBEARBEITUNG",
     },
     about: {
       title: "ÜBER UNS",
@@ -221,6 +235,13 @@ const messages = {
       machine_3: {
         paragraph_1: "Max Durchmesser - 254mm",
         paragraph_2: "Max. Länge φ 405 mm",
+      },
+      machine_4: {
+        paragraph_1: "Max. X-Achse 1067mm",
+        paragraph_2: "Max. Y-Achse 610mm",
+        paragraph_3: "Max. Z-Achse 610mm",
+        paragraph_4: "Maximale Tischlastkapazität - 1746kg",
+        paragraph_5: "Maße des Tisches - 1067x610mm",
       },
     },
     gallery: {

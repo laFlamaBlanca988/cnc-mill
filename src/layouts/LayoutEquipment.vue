@@ -134,6 +134,51 @@
         </li>
       </ul>
     </div>
+    <!-- Fourth section-->
+    <div
+      class="relative flex flex-col items-center justify-between gap-12 overflow-hidden pb-10 pt-10 xl:flex-row xl:gap-0 xl:pt-0"
+    >
+      <div
+        ref="animatedElementFourthLeft"
+        :class="
+          animatedElementFourthLeftTargetIsVisible && innerWidth > 1280
+            ? 'animate-slideFromLeft'
+            : ''
+        "
+        class="flex h-[90px] w-full items-center justify-center bg-main-blue text-white shadow-sm xl:h-[270px] xl:w-[270px]"
+      >
+        <h3 class="text-3xl lg:text-4xl">VMX-42</h3>
+      </div>
+      <div
+        class="h-[300px] w-full max-w-full bg-contain bg-center bg-no-repeat md:h-[500px] xl:h-[500px] xl:w-[600px]"
+        :style="{ backgroundImage: `url(${backgroundImage_4})` }"
+      ></div>
+      <ul
+        ref="animatedElementFourthRight"
+        :class="
+          animatedElementFourthRightTargetIsVisible && innerWidth > 1280
+            ? 'animate-slideFromRight'
+            : ''
+        "
+        class="flex h-[270px] w-full flex-col justify-center gap-3 bg-main-blue pl-14 text-white xl:w-[500px]"
+      >
+        <li class="list-disc text-xl lg:text-2xl">
+          {{ t("equipment.machine_4.paragraph_1") }}
+        </li>
+        <li class="list-disc text-xl lg:text-2xl">
+          {{ t("equipment.machine_4.paragraph_2") }}
+        </li>
+        <li class="list-disc text-xl lg:text-2xl">
+          {{ t("equipment.machine_4.paragraph_3") }}
+        </li>
+        <li class="list-disc text-xl lg:text-2xl">
+          {{ t("equipment.machine_4.paragraph_4") }}
+        </li>
+        <li class="list-disc text-xl lg:text-2xl">
+          {{ t("equipment.machine_4.paragraph_5") }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -141,6 +186,7 @@
 import backgroundImage_1 from "../assets/images/vmx40.png";
 import backgroundImage_2 from "../assets/images/vm1.png";
 import backgroundImage_3 from "../assets/images/tm6.png";
+import backgroundImage_4 from "../assets/images/vmx42.jpg";
 
 import { useIntersectionObserver } from "@vueuse/core";
 import { ref } from "vue";
@@ -150,17 +196,23 @@ const { t } = useI18n();
 const animatedElementFirstLeft = ref(null);
 const animatedElementSecondLeft = ref(null);
 const animatedElementThirdLeft = ref(null);
+const animatedElementFourthLeft = ref(null);
 
 const animatedElementFirstLeftTargetIsVisible = ref(false);
 const animatedElementSecondLeftTargetIsVisible = ref(false);
 const animatedElementThirdLeftTargetIsVisible = ref(false);
+const animatedElementFourthLeftTargetIsVisible = ref(false);
+
 const animatedElementFirstRight = ref(null);
 const animatedElementSecondRight = ref(null);
 const animatedElementThirdRight = ref(null);
+const animatedElementFourthRight = ref(null);
 
 const animatedElementFirstRightTargetIsVisible = ref(false);
 const animatedElementSecondRightTargetIsVisible = ref(false);
 const animatedElementThirdRightTargetIsVisible = ref(false);
+const animatedElementFourthRightTargetIsVisible = ref(false);
+
 const innerWidth = document.body.clientWidth;
 
 const { stop: stopFirst } = useIntersectionObserver(
@@ -215,6 +267,24 @@ const { stop: stopSixth } = useIntersectionObserver(
     if (isIntersecting) {
       animatedElementThirdRightTargetIsVisible.value = isIntersecting;
       stopSixth(); // Stop observing the second element once it's intersecting
+    }
+  }
+);
+const { stop: stopSeventh } = useIntersectionObserver(
+  animatedElementFourthRight,
+  ([{ isIntersecting }], observerElement) => {
+    if (isIntersecting) {
+      animatedElementFourthRightTargetIsVisible.value = isIntersecting;
+      stopSeventh(); // Stop observing the second element once it's intersecting
+    }
+  }
+);
+const { stop: stopEight } = useIntersectionObserver(
+  animatedElementFourthLeft,
+  ([{ isIntersecting }], observerElement) => {
+    if (isIntersecting) {
+      animatedElementFourthLeftTargetIsVisible.value = isIntersecting;
+      stopEight(); // Stop observing the second element once it's intersecting
     }
   }
 );

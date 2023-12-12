@@ -11,28 +11,26 @@
     ></div>
 
     <!-- Pseudo-element for Opacity -->
-    <div
-      class="absolute inset-0 z-0 mt-32 h-[300px] w-full bg-main-blue bg-opacity-40 lg:w-[50%]"
-    ></div>
-
-    <!-- Text Container -->
-    <div ref="animatedElement">
-      <div
-        v-show="targetIsVisible"
-        :class="innerWidth > 1280 ? 'animate-slideFromLeft' : ''"
-        class="relative z-10 mt-32 h-[300px] w-full font-normal text-white lg:w-[50%]"
-      >
-        <div class="flex h-[300px] flex-col justify-center px-4">
-          <h1
-            class="mb-4 text-center text-3xl font-bold text-black lg:text-start lg:text-4xl"
-          >
-            {{ t("services.title") }}
-          </h1>
-          <h3
-            class="max-w-[800px] text-center text-lg font-semibold text-white lg:text-start lg:text-xl"
-          >
-            {{ t("services.description") }}
-          </h3>
+    <div class="inset-0 z-0 mt-32 w-full bg-main-blue bg-opacity-40 lg:w-[50%]">
+      <!-- Text Container -->
+      <div ref="animatedElement">
+        <div
+          v-show="targetIsVisible"
+          :class="innerWidth > 1280 ? 'animate-slideFromLeft' : ''"
+          class="relative z-10 mt-32 w-full font-normal text-white"
+        >
+          <div class="flex flex-col justify-center px-4 pb-20 pt-10">
+            <h1
+              class="mb-4 text-center text-3xl font-bold text-black lg:text-start lg:text-4xl"
+            >
+              {{ t("services.title") }}
+            </h1>
+            <h3
+              class="max-w-[800px] text-center text-lg font-semibold text-white lg:text-start lg:text-xl"
+            >
+              {{ t("services.description") }}
+            </h3>
+          </div>
         </div>
       </div>
     </div>
