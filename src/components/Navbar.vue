@@ -133,15 +133,15 @@
         <div class="px-10">
           <a class="mb-4 flex items-center gap-2 text-white" href="#">
             <Icon icon="ion:location-sharp" class="h-[35px] w-[35px]"></Icon>
-            Petra Kočića bb</a
+            Mladena Stojanovića bb</a
           >
           <a class="mb-4 flex items-center gap-2 text-white" href="#">
             <Icon icon="fa-solid:phone-alt" class="h-[30px] w-[30px]"></Icon>
-            +38765882378
+            +436677779273
           </a>
           <a class="flex items-center gap-2 text-white" href="#">
             <Icon icon="ph:envelope-thin" class="h-[35px] w-[35px]"></Icon>
-            info@cncmill.org
+            info@cncmill.tech
           </a>
         </div>
       </div>

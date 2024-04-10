@@ -8,7 +8,7 @@
       class="flex w-[182px] items-center justify-center border-r border-gray-300 pr-2"
     >
       <Icon icon="mdi:location"></Icon>
-      Mladena Stojanovića bb
+      Mladena Stojanovića bb 
     </a>
     <a
       href="tel:+436677779273"
