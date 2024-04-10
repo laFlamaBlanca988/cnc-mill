@@ -127,11 +127,14 @@
       <div
         class="order-2 flex w-full flex-col items-center gap-4 lg:order-3 lg:w-1/3"
       >
-        <p class="text-center text-3xl text-white">
+        <p class="whitespace-nowrap text-center text-3xl text-white">
           {{ t("footer.contactUs") }}
         </p>
         <div class="px-10">
-          <a class="mb-4 flex items-center gap-2 text-white" href="#">
+          <a
+            class="mb-4 flex items-center gap-2 whitespace-nowrap text-white"
+            href="#"
+          >
             <Icon icon="ion:location-sharp" class="h-[35px] w-[35px]"></Icon>
             Mladena Stojanovića bb</a
           >
