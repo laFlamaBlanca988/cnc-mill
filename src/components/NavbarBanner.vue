@@ -4,11 +4,11 @@
   >
     <a
       target="_blank"
-      href="https://www.google.com/maps?q=44.7261657,17.3309937"
+      href="https://www.google.com/maps?q=44.72636209002612,17.331285340086275"
       class="flex w-[182px] items-center justify-center border-r border-gray-300 pr-2"
     >
       <Icon icon="mdi:location"></Icon>
-      Mladena Stojanovića bb 
+      Mladena Stojanovića bb
     </a>
     <a
       href="tel:+436677779273"
