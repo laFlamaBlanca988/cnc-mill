@@ -22,7 +22,7 @@ const messages = {
     about: {
       title: "O NAMA",
       description:
-        "CNC MILL s.p. osnovan je u septembru 2020. godine u Čelincu, Bosni i Hercegovini. Naša osnovna djelatnost je precizna CNC obrada metala. Našu prednost vidimo kao mogućnost maksimalnog prilagođavanja potrebama kupaca prilikom proširenja kapaciteta proizvodnje i asortimana usluga, a serijska proizvodnja srednjeg i velikog obima je naš dugoročni cilj. Uspješno posujemo sa kupcima iz Njemačke, Austrije, Švicarske i Bosne i Hercegovine.",
+        "CNC MILL s.p. osnovan je 2021. godine u Čelincu, Bosni i Hercegovini. Naša osnovna djelatnost je precizna CNC obrada metala. Našu prednost vidimo kao mogućnost maksimalnog prilagođavanja potrebama kupaca prilikom proširenja kapaciteta proizvodnje i asortimana usluga, a serijska proizvodnja srednjeg i velikog obima je naš dugoročni cilj. Uspješno posujemo sa kupcima iz Njemačke, Austrije, Švicarske i Bosne i Hercegovine.",
     },
     info: {
       employees: "Radnika",
@@ -112,7 +112,7 @@ const messages = {
     about: {
       title: "ABOUT US",
       description:
-        "CNC MILL s.p. was founded in September 2020 in Čelinac, Bosnia and Herzegovina. Our core activity is precision CNC metal processing. We see our advantage in the ability to fully adapt to customers' needs when expanding production capacities and service offerings, with serial production of medium and large volumes being our long-term goal. We have successfully collaborated with customers from Germany, Austria, Switzerland, and Bosnia and Herzegovina.",
+        "CNC MILL s.p. was founded in 2021 in Čelinac, Bosnia and Herzegovina. Our core activity is precision CNC metal processing. We see our advantage in the ability to fully adapt to customers' needs when expanding production capacities and service offerings, with serial production of medium and large volumes being our long-term goal. We have successfully collaborated with customers from Germany, Austria, Switzerland, and Bosnia and Herzegovina.",
     },
     info: {
       employees: "Employees",
@@ -203,7 +203,7 @@ const messages = {
     about: {
       title: "ÜBER UNS",
       description:
-        "CNC MILL d.o.o. wurde im September 2020 in Čelinac, Bosnien und Herzegowina, gegründet. Unsere Kernaktivität ist die präzise CNC-Metallverarbeitung. Unser Vorteil liegt darin, uns vollständig an die Bedürfnisse unserer Kunden anpassen zu können, indem wir Produktionskapazitäten und Serviceangebote erweitern. Die Serienproduktion von mittleren und großen Stückzahlen ist unser langfristiges Ziel. Wir haben erfolgreich mit Kunden aus Deutschland, Österreich, der Schweiz und Bosnien und Herzegowina zusammengearbeitet.",
+        "CNC MILL d.o.o. wurde im 2021 in Čelinac, Bosnien und Herzegowina, gegründet. Unsere Kernaktivität ist die präzise CNC-Metallverarbeitung. Unser Vorteil liegt darin, uns vollständig an die Bedürfnisse unserer Kunden anpassen zu können, indem wir Produktionskapazitäten und Serviceangebote erweitern. Die Serienproduktion von mittleren und großen Stückzahlen ist unser langfristiges Ziel. Wir haben erfolgreich mit Kunden aus Deutschland, Österreich, der Schweiz und Bosnien und Herzegowina zusammengearbeitet.",
     },
     info: {
       employees: "Mitarbeiter",

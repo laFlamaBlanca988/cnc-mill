@@ -33,7 +33,7 @@
             icon="healthicons:factory-worker"
           ></Icon>
           <div class="text-dark flex flex-col justify-start font-semibold">
-            <p class="text-start">6</p>
+            <p class="text-start">2</p>
             <p>{{ t("info.employees") }}</p>
           </div>
         </div>

@@ -26,7 +26,7 @@
         <a
           class="mb-4 flex items-center gap-2 text-black"
           target="_blank"
-          href="https://www.google.com/maps?q=44.7261657,17.3309937"
+          href="https://www.google.com/maps?q=44.72636209002612,17.331285340086275"
         >
           <Icon icon="ion:location-sharp" class="h-[35px] w-[35px]"></Icon>
           Mladena Stojanovića bb</a
